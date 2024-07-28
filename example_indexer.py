@@ -45,7 +45,7 @@ def main():
                     embedding_function=HuggingFaceEmbeddings(model_name="nomic-ai/nomic-embed-text-v1.5",
                                                              model_kwargs={'trust_remote_code': True}),
                     persist_directory=r"/tmp/example_collection")
-    process_pdfs_from_directory('/home/ganesh/Documents/pd/RAG/src_txt', chroma)
+    process_pdfs_from_directory('source directory path', chroma)
 
 
 if __name__ == '__main__':
